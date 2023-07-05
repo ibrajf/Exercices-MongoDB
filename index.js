@@ -20,7 +20,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.get("/", (req, res) => {
-  res.json(`Bienvenue sur l'API REST de type medium`);
+  res.json(`Hello sur l'API REST de type medium `);
 });
 app.use("/api/articles", require("./routes/articleRoutes"));
 app.listen(port, () =>
